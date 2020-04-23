@@ -10,7 +10,7 @@ node('master') {
 	}
 	stage('ContinuousTesting'){
 		git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
-		sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/ScriptedPipeline/testing.jar'
+		sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/RaDevPipeline/testing.jar'
 	}
 	stage('ContinuousDeivery'){
 		sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/RaDevPipeline/target/sprintboot-demo.war ubuntu@172.31.24.191:/var/lib/tomcat8/webapps/prdapp.war'

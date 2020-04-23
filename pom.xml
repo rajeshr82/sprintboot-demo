@@ -5,7 +5,7 @@
 
     <groupId>com.springdemo</groupId>
 	<artifactId>sprintboot-demo</artifactId>
-	<version>1.0</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>Sample Spring App</name>
     <parent>
